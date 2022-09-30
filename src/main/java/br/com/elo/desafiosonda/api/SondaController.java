@@ -45,7 +45,7 @@ public class SondaController {
 			throw new ApiException(HttpStatus.BAD_REQUEST, "Não foi possivel realizar a requisicao", e.getMessage());
 		}
 		return ResponseEntity.ok(sonda);
-	}
+	} 
 
 	@GetMapping
 	public List<Sonda> listar() {
